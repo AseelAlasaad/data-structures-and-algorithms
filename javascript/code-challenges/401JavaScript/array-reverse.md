@@ -5,7 +5,7 @@
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![Process](img/array-reverse.PNG)
+![Process](../img/array-reverse.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
