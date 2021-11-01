@@ -1,10 +1,15 @@
 # Data Structures and Algorithms
 
+
 ## Language: `JavaScript`
 
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
+
+[array reverse](https://aseelalasaad.github.io/data-structures-and-algorithms/code-challenges/401JavaScript/array-reverse)
+
+[array insert shift](https://aseelalasaad.github.io/data-structures-and-algorithms/code-challenges/401JavaScript/array-insert-shift)
 
 ### Data Structure: New Implementation
 
