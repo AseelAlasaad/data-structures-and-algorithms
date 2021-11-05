@@ -6,7 +6,7 @@ the middle index.
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-![array-insert-shift](../img/shiftarray.PNG)
+![array-insert-shift](../img/shift-insert-array.PNG)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Discuss Why. What is the Big O space/time for this approach? -->
