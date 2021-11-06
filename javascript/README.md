@@ -14,6 +14,10 @@
 
 [array insert shift](https://aseelalasaad.github.io/data-structures-and-algorithms/javascript/401JavaScript/array-insert-shift)
 
+## code challenge for array binary search
+
+[array insert shift](https://aseelalasaad.github.io/data-structures-and-algorithms/javascript/401JavaScript/array-binary-search)
+
 
 ## code challenge for Linked List
 
