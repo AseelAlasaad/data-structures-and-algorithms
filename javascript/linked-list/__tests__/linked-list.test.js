@@ -11,10 +11,10 @@ describe('Linked List', () => {
 
   it('insert new node working',()=>{
     let list= new LinkedList();
-    list.insert('One');
+    list.append('One');
     expect(list.head.value).toEqual('One');
 
-    list.insert('Tow');
+    list.append('Tow');
     expect(list.head.value).toEqual('One');
 
 
@@ -35,4 +35,5 @@ describe('Linked List', () => {
     list.toString();
     expect.stringMatching(newstring);
   })
+
 });

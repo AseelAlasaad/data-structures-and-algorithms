@@ -10,6 +10,8 @@
  * insert
  * toString 
  * includes
+ * insert After
+ * insert Before
 * testing each method in the testing file. 
 
 
