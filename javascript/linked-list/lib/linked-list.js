@@ -72,21 +72,22 @@ toString()
 
 
 insertBefore(ref,value)
-{      let newnode=new Node(value);
-    //current pointer
+{    
+   
     let current=this.head;
    if(ref==this.head.value)
 {
-    
+    let newnode=new Node(value);
     newnode.next=this.head;
     this.head=newnode;
+    return;
 }
 else{
   //while true
   while(current.next!==null){
     if(current.next.value==ref)
     {
-     
+        let newnode=new Node(value);
         newnode.next=current.next;
         current.next=newnode;
         return;
@@ -94,6 +95,7 @@ else{
     current=current.next;
 
     }
+    return null;
 
 }
 
