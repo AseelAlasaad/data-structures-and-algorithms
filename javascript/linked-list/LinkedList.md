@@ -12,6 +12,7 @@
  * includes
  * insert After
  * insert Before
+ * kthFromEnd
 * testing each method in the testing file. 
 
 
@@ -24,6 +25,12 @@ in toString method the Big(o) equal n beacuse using while loop it take n time to
 in includes method the Big(o) equal n
 beacuse using while loop it take n time to execute.
 
+in insertBefore method the Big(o) equal n
+
+in insertAfter method the Big(o) equal n
+
+in kthFromEnd method the Big(o) equal n
+
 ## API
 <!-- Description of each method publicly available to your Linked List -->
 * insert: insert new node 
@@ -32,3 +39,16 @@ beacuse using while loop it take n time to execute.
 "{ a } -> { b } -> { c } -> NULL"
 
 * includes: Returns Boolean, check the value is exists  in the linked list
+
+* insertBefore: insert new node, check the value is equal the new value to be add before value in the linked list.
+
+* insertBefore: insert new node, check the value is equal the new value to be add After value in the linked list.
+
+![insert before](insertbefore.PNG)
+
+* kthFromEnd: 
+
+ * Take two pointers approach.
+ * Move first pointer by k
+
+ ![insert before](kthfromEnd.PNG)
