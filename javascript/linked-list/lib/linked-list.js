@@ -78,6 +78,7 @@ insertBefore(ref,value)
    if(ref==this.head.value)
 {
     let newnode=new Node(value);
+    this.length++;
     newnode.next=this.head;
     this.head=newnode;
     return;
@@ -88,6 +89,7 @@ else{
     if(current.next.value==ref)
     {
         let newnode=new Node(value);
+        this.length++;
         newnode.next=current.next;
         current.next=newnode;
         return;
@@ -104,6 +106,7 @@ else{
 
 insertAfter(ref,value){
     let newnode=new Node(value);
+    this.length++;
 //current pointer
 let current=this.head;
 //while true
@@ -122,6 +125,35 @@ if(current.value==ref)
 current=current.next;
 
 }
+}
+
+
+//kthFromEnd(k)
+kthFromEnd(k){
+    let p1=this.head;
+    let p2=this.head;
+    let count=1;
+    if(k<=this.length)
+    {
+        while(count<k)
+        {
+            p1=p1.next;
+            count=count+1;
+        }
+        while(p1.next!==null)
+        {
+            p1=p1.next;
+            p2=p2.next;
+        }
+        console.log("p2 value",p2.value);
+    
+        return p2.value;
+
+    }
+    console.log("Exception");
+
+    return null;
+  
 }
 
 }
