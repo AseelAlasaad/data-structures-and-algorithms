@@ -49,7 +49,7 @@ describe('Linked List', () => {
     let list=new LinkedList();
     list.append(1);
     list.append(3);
-   list.insertAfter(1,5);
+    list.insertAfter(1,5);
 
     expect(list.head.value).toEqual(1);
     expect(list.head.next.value).toEqual(5);
@@ -84,6 +84,19 @@ describe('Linked List', () => {
     //Where the linked list is of a size 1
 
 
+  });
+
+  it("linkedListzip",()=>{
+    let newlist=new LinkedList();
+    let list1=new LinkedList();
+    list1.append(1);
+    list1.append(3);
+    let list2=new LinkedList();
+    list2.append(8);
+    list2.append(2);
+    newlist.linkedListzip(list1,list2)
+    expect( newlist.linkedListzip(list1,list2)).toBe('{1}->{8}->{3}->{2}->NULL');
+    //  expect(newlist.head.next.value).toEqual(8);
   });
 
 })
