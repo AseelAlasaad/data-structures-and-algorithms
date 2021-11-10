@@ -156,5 +156,38 @@ kthFromEnd(k){
   
 }
 
+linkedListzip(L2,L3)
+{ 
+  let  margelist=new LinkedList();
+
+  let current1=L2.head;
+  let current2=L3.head;
+    if(L2.length==0)
+    {
+        // console.log(L3);
+        return L3;
+
+    }
+   if(L3.length==0)
+    // {        console.log(L2.toString());
+{
+        return L2;
+    }
+  while(current1!==null || current2!==null)
+    {
+        if(current1!==null)
+        {
+            margelist.append(current1.value);
+            current1=current1.next;
+        }
+        if(current2!==null)
+        {
+            margelist.append(current2.value);
+            current2=current2.next;
+        }
+    }
+return margelist.toString();
+}
+
 }
 module.exports=LinkedList;
