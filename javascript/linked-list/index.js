@@ -40,6 +40,6 @@ L3.append(4);
 L3.append(6);
 
 marge.linkedListzip(L2,L3);
-console.log(L2.length);
-console.log(L3.length);
+// console.log(L2.length);
+// console.log(L3.length);
 
