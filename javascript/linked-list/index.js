@@ -7,7 +7,11 @@
 // module.exports = LinkedList;
 
 const LinkedList=require('./lib/linked-list')
+const Stack=require('./stack&queue/stack/stack');
+const Queue=require('./stack&queue/queue/queue');
 
+const S1=new Stack();
+const Q1=new Queue();
 const L1=new LinkedList();
 
 L1.append(1);
@@ -19,7 +23,7 @@ L1.insertAfter(8,12);
 L1.include(5);
 L1.include(3);
 L1.include(1);
-console.log(L1.toString());
+// console.log(L1.toString());
 
 L1.kthFromEnd(0);
 L1.kthFromEnd(3);
@@ -40,6 +44,13 @@ L3.append(4);
 L3.append(6);
 
 marge.linkedListzip(L2,L3);
-console.log(L2.length);
-console.log(L3.length);
+// console.log(L2.length);
+// console.log(L3.length);
+S1.isEmpty()
+S1.push(1);
+S1.push(2);
+S1.push(8);
+S1.push(10);
+S1.push(11);
+S1.peek();
 
