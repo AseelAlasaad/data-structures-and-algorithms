@@ -25,12 +25,12 @@
 
 ## code challenge for insert Before
 
-[insert Before](https://aseelalasaad.github.io/data-structures-and-algorithms/javascript/linked-list/LinkedList)
+[insert Before](https://aseelalasaad.github.io/data-structures-and-algorithms/javascript/linked-list/linkedlist-insertion)
 
 ## code challenge for insert After
 
-[insert After](https://aseelalasaad.github.io/data-structures-and-algorithms/javascript/linked-list/LinkedList)
+[insert After](https://aseelalasaad.github.io/data-structures-and-algorithms/javascript/linked-list/linkedlist-insertion)
 
 ## code challenge for kthFromEnd
 
-[kthFromEnd](https://aseelalasaad.github.io/data-structures-and-algorithms/javascript/linked-list/LinkedList)
+[kthFromEnd](https://aseelalasaad.github.io/data-structures-and-algorithms/javascript/linked-list/kthFromEnd)
