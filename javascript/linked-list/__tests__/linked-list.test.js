@@ -49,11 +49,11 @@ describe('Linked List', () => {
     let list=new LinkedList();
     list.append(1);
     list.append(3);
-    list.insertAfter(1,5);
+    list.insertAfter(3,5);
 
     expect(list.head.value).toEqual(1);
-    expect(list.head.next.value).toEqual(5);
-    expect(list.head.next.next.value).toEqual(3);
+    expect(list.head.next.value).toEqual(3);
+    expect(list.head.next.next.value).toEqual(5);
 
 
   });
@@ -98,5 +98,7 @@ describe('Linked List', () => {
     expect( newlist.linkedListzip(list1,list2)).toBe('{1}->{8}->{3}->{2}->NULL');
     //  expect(newlist.head.next.value).toEqual(8);
   });
+
+
 
 })

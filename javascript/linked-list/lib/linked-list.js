@@ -73,7 +73,11 @@ toString()
 
 insertBefore(ref,value)
 {    
-   
+   if(this.head==null)
+   {
+       console.log('null');
+       return null;
+   }
     let current=this.head;
    if(ref==this.head.value)
 {
@@ -105,55 +109,47 @@ else{
 }
 
 insertAfter(ref,value){
-    let newnode=new Node(value);
-    this.length++;
+let newnode=new Node(value);
+this.length++;
 //current pointer
 let current=this.head;
 //while true
 while(current.next!==null){
 if(current.value==ref)
 {
-// { console.log('current.next.value',current.next.value);
-//     console.log('current.value',current.next);
-//     console.log('current.value',current.value);
-    
-     newnode.next =current.next;
-    current.next=newnode
-
+    newnode.next =current.next;
+    current.next=newnode;
     return;
 }
 current=current.next;
-
 }
+if(current.value===ref)
+{
+    newnode.next =current.next;
+    current.next=newnode;
+    return;}
 }
 
 
 //kthFromEnd(k)
 kthFromEnd(k){
-    let p1=this.head;
-    let p2=this.head;
-    let count=1;
-    if(k<=this.length)
-    {
-        while(count<k)
-        {
-            p1=p1.next;
-            count=count+1;
-        }
-        while(p1.next!==null)
-        {
-            p1=p1.next;
-            p2=p2.next;
-        }
-        console.log("p2 value",p2.value);
-    
-        return p2.value;
-
-    }
-    console.log("Exception");
-
-    return null;
-  
+   
+if(!this.head || k<0|| k>=this.length)
+{
+   return null;
+}
+if(k=0){
+    return this.tail.value;
+}
+if(k=this.length-1)
+{   
+return this.head.value;
+}
+let current=this.head;
+for (let i = this.length-1; i>k; i--) {
+   current=current.next;
+   }
+ return current.value; 
 }
 
 linkedListzip(L2,L3)

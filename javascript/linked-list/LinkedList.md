@@ -40,15 +40,9 @@ in kthFromEnd method the Big(o) equal n
 
 * includes: Returns Boolean, check the value is exists  in the linked list
 
-* insertBefore: insert new node, check the value is equal the new value to be add before value in the linked list.
 
-* insertBefore: insert new node, check the value is equal the new value to be add After value in the linked list.
 
-![insert before](insertbefore.PNG)
 
-* kthFromEnd: 
 
- * Take two pointers approach.
- * Move first pointer by k
 
- ![insert before](kthfromEnd.PNG)
+
