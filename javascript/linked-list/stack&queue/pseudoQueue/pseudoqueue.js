@@ -19,10 +19,10 @@ class pseudoQueue{
 
 dequeue(){
    
-if(this.out==null)
+if(this.out.peek()=='empty')
 {
 
-while(this.in!==null)
+while(this.in.peek()!=='empty')
 {
     this.out.push(this.in.pop());
   
