@@ -10,13 +10,13 @@ const LinkedList=require('./lib/linked-list')
 const Stack=require('./stack&queue/stack/stack');
 const Queue=require('./stack&queue/queue/queue');
 // const pseudoQueue=require('./stack&queue/pseudoQueue/pseudoqueue');
-// const S1=new Stack();
+const S1=new Stack();
 // const Q1=new Queue();
 // const L1=new LinkedList();
 // const p1=new pseudoQueue();
 const AnimalShelter=require('./stack&queue/stack-queue-animal/AnimalShelter ');
 const q1= new AnimalShelter();
-
+const validateBrackets=require('./stack&queue/stack-queue-brackets/brackets');
 q1.enqueue('cat');
 q1.enqueue('dog');
 q1.enqueue('d');
@@ -25,6 +25,8 @@ q1.enqueue('dog');
 q1.enqueue('dcat');
 q1.dequeue('cat');
 console.log(q1);
+
+console.log(validateBrackets('[()]'));
 
 // L1.append(1);
 // L1.append(3);
