@@ -1,7 +1,6 @@
 'use strict';
 
 const node=require('./node');
-
 class BinaryTree{
     constructor(root=null)
     {
