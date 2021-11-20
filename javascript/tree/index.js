@@ -26,7 +26,7 @@ BST.Add(4);
 BST.Add(6);
 BST.Add(3);
 BST.Add(10); 
-console.log('-------------After--------------');
+console.log('-------------After Add--------------');
 console.log('add:', BST.inOrder());
 
 BST.Contains(10);
