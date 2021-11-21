@@ -2,8 +2,6 @@
 
 
 const Queue = require('../queue/queue');
-
-
 describe('queue', () => {
 
 it('works',()=>{
