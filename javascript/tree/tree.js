@@ -86,6 +86,25 @@ class BinaryTree{
    }
 
 
+   Max()
+   { 
+    if(this.root===null) return false;   
+    
+    let array=this.preOrder();
+    let max= array[0];
+    for (let i = 1; i < array.length; i++) {
+        if(array[i] > max)
+        {
+            max=array[i]
+        }
+        
+    }
+    console.log(max);
+    return max;
+     
+   }
+
+
 }
 module.exports=BinaryTree;
 

@@ -71,4 +71,25 @@ describe('test Binary Tree',()=>{
     const inorder=[2,1,3]
     expect(tree.inOrder()).toEqual(inorder);
 })
+
+it('Find the max value ',()=>{
+    const one=new Node(1);
+    const tow=new Node(2);
+    const three=new Node(3);
+    let tree= new BT(one);
+    one.left=tow;
+    one.right=three;
+  
+
+    expect(tree.Max()).toEqual(3);
+
+})
+
+it('Find the max value of empty tree ',()=>{
+ 
+    let tree= new BT(null);
+
+    expect(tree.Max()).toBeFalsy();
+
+})
 })
