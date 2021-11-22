@@ -1,6 +1,7 @@
 'use strict';
 
 const node=require('./node');
+
 class BinaryTree{
     constructor(root=null)
     {
@@ -105,6 +106,9 @@ class BinaryTree{
    }
 
 
+
 }
+
+
 module.exports=BinaryTree;
 

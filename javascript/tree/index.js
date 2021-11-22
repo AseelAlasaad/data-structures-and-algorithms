@@ -3,10 +3,10 @@
 const Node=require('./node');
 const BinaryTree=require('./tree');
 const binarySearchtree=require('./binarySearchtree');
-
+const breadthFirst=require('./bredthFirst');
 const BT= new BinaryTree();
 const BST= new binarySearchtree();
-BT.root=new Node(1,new Node(2,new Node(10), new Node(4)),new Node(5,new Node(6), new Node(7)));
+BT.root=new Node(2,new Node(7,new Node(2), new Node(6)),new Node(5,new Node(9), new Node(4)));
 
 console.log('preOrder:', BT.preOrder());
 
@@ -37,4 +37,6 @@ console.log('Tree:', BT.preOrder());
 BT.Max();
 
 
+console.log('-------------breadthFirst--------------');
+breadthFirst(BT);
 
