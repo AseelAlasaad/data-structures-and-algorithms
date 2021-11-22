@@ -2,7 +2,7 @@
 
 const BT=require('../tree');
 const Node= require('../node');
-
+const breadthFirst=require('../bredthFirst');
 describe('test Binary Tree',()=>{
     
     it('instantiate an empty tree',()=>{
@@ -91,5 +91,26 @@ it('Find the max value of empty tree ',()=>{
 
     expect(tree.Max()).toBeFalsy();
 
+})
+
+
+it('breadth search First traversal',()=>{
+    const one=new Node(1);
+    const tow=new Node(2);
+    const three=new Node(3);
+    const four=new Node(4);
+    const five=new Node(5);
+    const six=new Node(6);
+    const seven=new Node(7);
+
+    let tree= new BT(one);
+    one.left=tow;
+    one.right=three;
+    tow.left=four;
+    tow.right=five;
+    three.left=six;
+    three.right=seven;
+    const result=[1,2,3,4,5,6,7]
+    expect(breadthFirst(tree)).toEqual(result);
 })
 })
