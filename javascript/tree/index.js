@@ -40,3 +40,7 @@ BT.Max();
 console.log('-------------breadthFirst--------------');
 breadthFirst(BT);
 
+console.log('-------------breadthFirst--------------');
+BT.FizzBuzz()
+
+

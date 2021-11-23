@@ -106,6 +106,37 @@ class BinaryTree{
    }
 
 
+   FizzBuzz()
+   { 
+    if(this.root===null) return false;   
+    
+    let array=this.preOrder();
+    let FizzBuzz=[];
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] % 3==0)
+        {
+            FizzBuzz.push('Fizz');
+        }
+        else if(array[i] % 5==0)
+        {
+            FizzBuzz.push('Buzz');
+           
+        }
+        else if(array[i] % 3==0 && array[i]%5==0)
+        {
+            FizzBuzz.push('FizzBuzz');
+        }
+        else{
+            FizzBuzz.push(array[i]);
+        }
+    }
+    console.log(FizzBuzz);
+    return FizzBuzz;
+     
+   }
+
+
+
 
 }
 
