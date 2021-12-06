@@ -3,7 +3,7 @@
 
 Merge sort is an example of a divide-and-conquer type sorting-algorithm.The input of merge sort is an array of some elements
 
-![merge](https://miro.medium.com/max/770/1*0X8OlHK1SZN6k0J725Kwng.png)
+![merge](https://miro.medium.com/max/1000/1*Rjy7GtVPDt2KqrPteE0T0A.png)
 
 
 # Pseudo Code 
@@ -47,3 +47,11 @@ Merge sort divides the array in to two sub arrays and later divides each array i
 # Test
 
 ![merge](mergeSort.PNG)
+
+
+
+# BIG O
+time complexity of merge Sort= O(n)
+
+Space complexity of merge Sort= O(n)
+ 
