@@ -28,15 +28,30 @@ ALGORITHM Mergesort(arr)
 ALGORITHM Merge(left, right)
     DECLARE i <-- 0
     DECLARE j <-- 0
+    DECLARE k <-- 0
+
     DECLARE result <-- []
 
     while i < left.length && j < right.length
         if left[i] < right[j]
-            push left[i] in result
+            result[k] <-- left[i]
             i <-- i + 1
         else
-            push right[j] in result
+            result[k] <-- right[j]
             j <-- j + 1
+
+        k <-- k + 1
+    while i < left.length
+         result[k] <-- left[i]
+            i <-- i + 1
+             k <-- k + 1
+
+    while j < right.length
+            result[k] <-- right[j]
+            j <-- j + 1
+            k <-- k + 1
+
+
 ```       
 
 
@@ -51,7 +66,7 @@ Merge sort divides the array in to two sub arrays and later divides each array i
 
 
 # BIG O
-time complexity of merge Sort= O(n)
+time complexity of merge Sort= O(n log n)
 
 Space complexity of merge Sort= O(n)
  
