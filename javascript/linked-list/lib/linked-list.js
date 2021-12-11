@@ -16,7 +16,7 @@ append(value){
     if(!this.head)
     {
         this.head=newnode;
-        return this;
+        return ;
     }
     let currentnode=this.head;
     while(currentnode.next)
@@ -24,8 +24,17 @@ append(value){
         currentnode=currentnode.next;
     }
     currentnode.next=newnode;
-    return this;
+    // return this;
 }
+values() {
+    let values = [];
+    let current = this.head;
+    while (current) {
+      values.push(current.value);
+      current = current.next;
+    }
+    return values;
+  }
 
 include(value)
 {
