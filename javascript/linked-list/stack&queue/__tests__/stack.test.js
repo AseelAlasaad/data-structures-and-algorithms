@@ -40,13 +40,13 @@ describe('Stack', () => {
 
    });
   //  Can successfully peek the next item on the stack
-  it('peek',()=>{
+//   it('peek',()=>{
       
-    let newstack=new Stack();
-    newstack.push(2);
-    expect(newstack.peek()).toEqual(2);
+//     let newstack=new Stack();
+//     newstack.push(2);
+//     expect(newstack.peek()).toEqual(2);
 
- });
+//  });
  //pop or peek on empty stack 
  it('pop or peek on empty stack ',()=>{
       
