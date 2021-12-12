@@ -77,21 +77,21 @@ class HashMap{
      
 }
 
-const myHash = new HashMap(1024);
+// const myHash = new HashMap(1024);
 
-myHash.add('🍕', '🍕');
+// myHash.add('🍕', '🍕');
 
-myHash.add('name', 'Aseel');
-myHash.add('age', '23');
-myHash.add('University', 'Yarmouk');
-myHash.add('City', 'Irbid');
+// myHash.add('name', 'Aseel');
+// myHash.add('age', '23');
+// myHash.add('University', 'Yarmouk');
+// myHash.add('City', 'Irbid');
 
-myHash.map.forEach(l=>{
-    console.log(l.values());
-});
-console.log(myHash.get('name'));//Aseel
-console.log(myHash.contains('name')); //true
+// myHash.map.forEach(l=>{
+//     console.log(l.values());
+// });
+// console.log(myHash.get('name'));//Aseel
+// console.log(myHash.contains('name')); //true
 
-console.log(myHash.contains('year')); //false
+// console.log(myHash.contains('year')); //false
 
 module.exports=HashMap;
