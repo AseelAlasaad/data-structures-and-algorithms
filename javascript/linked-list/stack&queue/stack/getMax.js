@@ -60,89 +60,92 @@
 
 
 // module.exports=MaxStack;
+const Stack=require('./stack')
+class MaxStack {
 
-// class MaxStack {
-
-//     constructor() {
-//       this.stack = new Stack();
-//       this.size = 0;
-//       this.maxValues = [];
-//     }
+    constructor() {
+      this.stack = new Stack();
+      this.size = 0;
+      this.maxValues = [];
+    }
   
-//     push(element) {
+    push(element) {
 
-//         if (this.size === 0 || element<= this.findMin()) {
-//         this.maxValues.push(element)
-//       }
-//       else {
-//         this.maxValues.push(this.findMin())
-//       }
-//       this.size += 1
-//       this.data.push(element);
-//       return this.data
-//     }
+        if (this.size === 0 || element>= this.findMax()) {
+        this.maxValues.push(element)
+        console.log(this.maxValues);
+      }
+      else {
+        this.maxValues.push(this.findMax())
+      }
+      this.size += 1
+      this.stack.push(element);
+      return this.stack
+    }
   
-//     pop() {
-//       if (this.size > 0) {
-//         this.size -= 1;
-//         this.maxValues.pop()
-//         return this.data.pop()
-//       }
-//     }
+    pop() {
+      if (this.size > 0) {
+        this.size -= 1;
+        this.maxValues.pop()
+        return this.data.pop()
+      }
+    }
 
-//     findMin() {
-//       return this.maxValues[this.size - 1]
-//     }
-// }
+    findMax() {
+      return this.maxValues[this.size - 1]
+    }
+}
 
 
 
-// let m= new MaxStack();
-// m.push(2);
-// m.push(10);
-// m.push(5);
+let m= new MaxStack();
+m.push(2);
+m.push(5);
+m.push(10);
+console.log(m);
 // m.findMin()
-// console.log(m.findMin());
+console.log(m.findMax());
 
-// module.exports=MaxStack;
+module.exports=MaxStack;
 
 // const Stack=require('./stack');
 
-// function Sort(stack,temp){
+function Sort(stack,temp){
    
-//    let node=stack.pop();
+   let node=stack.pop();
    
-//    temp.push(node.value)
-//    while(stack.top!==null)
-//    {  
-//      let tempNode=stack.pop();
-//      while(temp.top !==null)
-//      {
-//        if(tempNode.value>temp.top.value)
-//        {
-//          let popNode=temp.pop();
-//          stack.push(popNode.value);
+   temp.push(node.value)
+   while(stack.top!==null)
+   {  
+     let tempNode=stack.pop();
+     while(temp.top !==null)
+     {
+       if(tempNode.value>temp.top.value)
+       {
+         let popNode=temp.pop();
+         stack.push(popNode.value);
          
-//         }
-//         else{
-//           break;
-//         }    
-//     }
-//     temp.push(tempNode.value);
-//    }
-//    while (temp.top!==null) {
-//      let current=temp.pop();
-//      stack.push(current.value);
-//    }
-//    return stack;
+        }
+        else{
+          break;
+        }    
+    }
+    temp.push(tempNode.value);
+   }
+   while (temp.top!==null) {
+     let current=temp.pop();
+     stack.push(current.value);
+   }
+  // stack.top.value=-1;
+   return stack;
 
-// }
+}
 
 // const getmin=(stack)=>{
 //   return stack.top.value;
 // }
 
-// const getMAx=(stack)=>{
+// const getMax=(stack)=>{
 //   return stack.top.value;
 // }
 
@@ -171,8 +174,7 @@
 //   return temp;
 
 // }
-
-
+// const Stack=require('./stack')
 // let S1=new Stack();
 
 // S1.push(65);
@@ -180,7 +182,7 @@
 // S1.push(25);
 // S1.push(75);
 // let temp=new Stack();
-// // let sort=Sort(S1,temp);
-// // console.log(sort);
-
+// let sort=Sort(S1,temp);
+// console.log(sort);
+// console.log(getMax(S1));
 // getMax(S1,temp);

@@ -47,7 +47,7 @@ pop(){
     temp.next=null;
     this.length-=1;
     // this.arr.pop();
-    return temp;
+    return temp.value;
 
     }
 

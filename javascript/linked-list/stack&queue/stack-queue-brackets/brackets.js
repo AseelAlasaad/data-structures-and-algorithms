@@ -1,35 +1,39 @@
 
 // str= {} or (){} etc
+const stack=require('../stack/stack');
 function validateBrackets(str)
 {
-  let open=[];
-  let close=[];
-for (let i = 0; i < str.length; i++)
-{
-    let current = str.charAt(i);
-    if (current == '{' || current == '(' || current == '[')
+    const open=new stack();
+    for (let i = 0; i < str.length; i++)
     {
-        open.push(current);
+        let current = str.charAt(i);
+       
+        if (current == '{' || current == '(' || current == '[')
+        {
+            open.push(current);
+            console.log(open);
+        }
+        else if(current===')'&& open.length!==0 && open.top.value=='(')
+        {
+            open.pop();
+        }
+        else  if(current==='}'&& open.length!==0 && open.top.value=='{')
+        {
+            open.pop();
+        }
+       else if(current===']'&& open.length!==0 && open.top.value=='[')
+        {
+            open.pop();
+        }
+        else return false
     }
-    if(current==='}')
+    if(open.length!==0)
     {
-        close.push('}');
+        return false
     }
-    else  if(current===')')
-    {
-        close.push(')');
-    }
-    else  if(current===']')
-    {
-        close.push(']');
-    }
-}
-if(open.length<close.length ||open.length>close.length)
-{
-    return false
+    
+    return true;
 }
 
-return true;
-}
-
+console.log(validateBrackets("()[)"));
 module.exports=validateBrackets;
